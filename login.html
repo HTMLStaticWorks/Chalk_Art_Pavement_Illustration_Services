@@ -12,20 +12,15 @@
 <body class="bg-light">
     <!-- Page Toggles -->
     <div class="position-fixed top-0 end-0 p-3 z-3 d-flex gap-2">
-        <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
-            RTL
+        <button id="rtlToggle" class="btn page-toggle" title="Toggle RTL">
+            <span style="font-weight: 800; font-size: 0.65rem;">RTL</span>
         </button>
-        <button id="themeToggle" class="btn btn-link text-secondary p-0 fs-4" title="Toggle Theme">
+        <button id="themeToggle" class="btn page-toggle" title="Toggle Theme">
             <i class="bi bi-moon-fill"></i>
         </button>
     </div>
 
-    <!-- Back to Home -->
-    <div class="position-fixed top-0 start-0 p-3 z-3">
-        <a href="index.html" class="btn btn-link text-decoration-none text-dark fw-bold">
-            <i class="bi bi-arrow-left me-1"></i> Back
-        </a>
-    </div>
+
 
     <main class="d-flex align-items-center min-vh-100 py-5">
         <div class="container">
@@ -34,6 +29,9 @@
                     <div class="card shadow-sm border-0 rounded-4">
                         <div class="card-body p-4 p-md-5">
                             <div class="text-center mb-4">
+                                <a class="navbar-brand justify-content-center fs-2 mb-3" href="index.html">
+                                    <i class="bi bi-brush"></i> ChalkMaster
+                                </a>
                                 <h3>Welcome Back</h3>
                                 <p class="text-secondary">Login to manage your bookings</p>
                             </div>
@@ -61,7 +59,7 @@
                                 
                                 <div class="position-relative mb-4">
                                     <hr class="text-secondary">
-                                    <span class="position-absolute top-50 start-50 translate-middle px-2 bg-white text-secondary small">or continue with</span>
+                                    <span class="position-absolute top-50 start-50 translate-middle px-2 divider-text small">or continue with</span>
                                 </div>
                                 
                                 <div class="d-flex gap-2 mb-4">
