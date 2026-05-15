@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChalkMaster | Professional Chalk Art & Pavement Illustration</title>
+    <meta name="description" content="Professional 3D chalk art, pavement illustrations, and street murals for festivals, corporate events, and public spaces.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            
+            <div class="d-flex align-items-center order-lg-last gap-2">
+                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
+                    RTL
+                </button>
+                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
+                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item mt-3">
+                    <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <span class="badge bg-primary-subtle text-primary mb-3 p-2">#1 Street Art Service</span>
+                        <h1 class="hero-title">Turning Every Pavement Into a <span class="text-primary">Masterpiece.</span></h1>
+                        <p class="lead mb-4 text-secondary">Expert 3D chalk art and pavement illustrations for festivals, corporate events, and brand activation.</p>
+                        <div class="d-flex gap-3 justify-content-center">
+                            <a href="services.html" class="btn btn-primary btn-lg">Explore Services</a>
+                            <a href="contact.html" class="btn btn-outline-primary btn-lg">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md-3">
+                        <div class="card stat-card h-100 p-4 border-1">
+                            <h2 class="display-5 fw-bold text-primary">500+</h2>
+                            <p class="text-secondary mb-0">Murals Created</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card h-100 p-4 border-1">
+                            <h2 class="display-5 fw-bold text-primary">120+</h2>
+                            <p class="text-secondary mb-0">Global Festivals</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card h-100 p-4 border-1">
+                            <h2 class="display-5 fw-bold text-primary">50+</h2>
+                            <p class="text-secondary mb-0">Awards Won</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card h-100 p-4 border-1">
+                            <h2 class="display-5 fw-bold text-primary">100%</h2>
+                            <p class="text-secondary mb-0">Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Services -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Our Specialized Services</h2>
+                    <p class="text-secondary">Transforming public spaces with temporary and permanent art.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Service 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=800" alt="3D Street Art" class="card-img-top service-img">
+                            <div class="card-body p-4">
+                                <h3>3D Street Art</h3>
+                                <p class="text-secondary">Optical illusions that pop off the ground, perfect for social media moments.</p>
+                                <a href="service-details.html" class="text-primary fw-bold text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=800" alt="Corporate Branding" class="card-img-top service-img">
+                            <div class="card-body p-4">
+                                <h3>Corporate Branding</h3>
+                                <p class="text-secondary">Unique pavement advertising and brand activation murals.</p>
+                                <a href="service-details.html" class="text-primary fw-bold text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" alt="Festival Murals" class="card-img-top service-img">
+                            <div class="card-body p-4">
+                                <h3>Festival Murals</h3>
+                                <p class="text-secondary">Large-scale collaborative art pieces for public events and celebrations.</p>
+                                <a href="service-details.html" class="text-primary fw-bold text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=1000" alt="Process" class="img-fluid rounded-4 shadow">
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0 ps-lg-5">
+                        <h2 class="mb-4">How We Bring <span class="text-primary">Art to Life</span></h2>
+                        <div class="d-flex mb-4">
+                            <div class="me-4 fs-1 text-primary"><i class="bi bi-1-circle"></i></div>
+                            <div>
+                                <h4>Concept & Sketch</h4>
+                                <p class="text-secondary">We draft a digital concept based on your vision and the location's geometry.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="me-4 fs-1 text-primary"><i class="bi bi-2-circle"></i></div>
+                            <div>
+                                <h4>Material Selection</h4>
+                                <p class="text-secondary">Choosing the right chalk, pastels, or temporary paint for the specific pavement type.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="me-4 fs-1 text-primary"><i class="bi bi-3-circle"></i></div>
+                            <div>
+                                <h4>Live Execution</h4>
+                                <p class="text-secondary">Our artists perform live, creating a captivating experience for passersby.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Showcase Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Project Showcase</h2>
+                    <p class="text-secondary">A glimpse into our world of vibrant illusions and street masterpieces.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" alt="The Dragon's Lair">
+                            <div class="gallery-overlay">
+                                <h4>The Dragon's Lair</h4>
+                                <p>3D Illusion for City Festival</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=800" alt="Ocean Abyss">
+                            <div class="gallery-overlay">
+                                <h4>Ocean Abyss</h4>
+                                <p>Corporate Event Branding</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=800" alt="Urban Jungle">
+                            <div class="gallery-overlay">
+                                <h4>Urban Jungle</h4>
+                                <p>Public Art Installation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800" alt="Starry Night Remix">
+                            <div class="gallery-overlay">
+                                <h4>Starry Night Remix</h4>
+                                <p>Street Art Competition</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&q=80&w=800" alt="Neon Dream">
+                            <div class="gallery-overlay">
+                                <h4>Neon Dream</h4>
+                                <p>Music Festival Mural</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&q=80&w=800" alt="Concrete Garden">
+                            <div class="gallery-overlay">
+                                <h4>Concrete Garden</h4>
+                                <p>Community Space Beautification</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="services.html" class="btn btn-outline-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="text-secondary">Trusted by leading brands and festival organizers worldwide.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card p-4 h-100 bg-light border-0 shadow-sm text-center">
+                            <div class="mb-3 text-primary">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fst-italic mb-4">"The 3D art created for our product launch was a massive hit. It stopped everyone in their tracks and generated thousands of social shares!"</p>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="John Doe" class="rounded-circle mb-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0">John Doe</h6>
+                                    <small class="text-secondary">Marketing Director, TechCorp</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4 h-100 bg-light border-0 shadow-sm text-center">
+                            <div class="mb-3 text-primary">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fst-italic mb-4">"ChalkMaster transformed our annual street festival. Their live performance was engaging and the final mural was breathtaking."</p>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Sarah Miller" class="rounded-circle mb-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0">Sarah Miller</h6>
+                                    <small class="text-secondary">Festival Coordinator</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4 h-100 bg-light border-0 shadow-sm text-center">
+                            <div class="mb-3 text-primary">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fst-italic mb-4">"Professional, punctual, and incredibly talented. They took our simple concept and turned it into a mind-bending illusion."</p>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150" alt="Robert Brown" class="rounded-circle mb-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0">Robert Brown</h6>
+                                    <small class="text-secondary">Brand Manager, LuxEvent</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-5 bg-primary text-white text-center">
+            <div class="container">
+                <h2 class="mb-4">Ready to Transform Your Space?</h2>
+                <p class="lead mb-4 opacity-75">Join dozens of festivals and brands that trust ChalkMaster.</p>
+                <a href="contact.html" class="btn btn-light btn-lg text-primary fw-bold">Book a Consultation</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo mb-3 d-inline-block" href="index.html">
+                        <i class="bi bi-brush"></i> ChalkMaster
+                    </a>
+                    <p class="opacity-75">Pioneering the world of pavement art since 2015. We bring color and illusion to every corner of the world.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Support</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="opacity-75 mb-3">Get the latest street art updates directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-75">
+                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | ChalkMaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-primary text-white">
+    <main class="d-flex align-items-center min-vh-100 py-5 text-center position-relative">
+        <!-- Background Pattern -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10" style="background-image: url('https://images.unsplash.com/photo-1541888941295-1e8762df43b4?auto=format&fit=crop&q=80&w=1500'); background-size: cover; background-position: center;"></div>
+        
+        <div class="container position-relative z-1">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="mb-5">
+                        <i class="bi bi-brush display-1"></i>
+                    </div>
+                    <h1 class="display-3 fw-bold mb-4">We're Sketching Something New</h1>
+                    <p class="lead mb-5 opacity-75">Our new masterpiece is almost ready. Subscribe to be the first to know when we launch.</p>
+                    
+                    <form class="needs-validation mx-auto" style="max-width: 400px;" novalidate>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button class="btn btn-light text-primary fw-bold" type="submit">Notify Me</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo mb-3 d-inline-block" href="index.html">
+                        <i class="bi bi-brush"></i> ChalkMaster
+                    </a>
+                    <p class="opacity-75">Pioneering the world of pavement art since 2015. We bring color and illusion to every corner of the world.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Support</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="opacity-75 mb-3">Get the latest street art updates directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-75">
+                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Simple form validation for coming soon page
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (form.checkValidity()) {
+                alert('Thank you for subscribing!');
+                form.reset();
+            }
+            form.classList.add('was-validated');
+        });
+    </script>
+</body>
+</html>

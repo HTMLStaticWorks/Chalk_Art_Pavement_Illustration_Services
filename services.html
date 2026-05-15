@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | ChalkMaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            <div class="d-flex align-items-center order-lg-last gap-2">
+                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
+                    RTL
+                </button>
+                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
+                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item mt-3">
+                    <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="py-5 bg-primary text-white">
+            <div class="container text-center py-5">
+                <h1 class="display-3 fw-bold">Our Services</h1>
+                <p class="lead">Versatile art solutions for every occasion.</p>
+            </div>
+        </section>
+
+        <!-- Service Grid -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Service 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="3D Art">
+                            <div class="card-body p-4 text-center">
+                                <h3>3D Street Art</h3>
+                                <p class="text-secondary">Mind-bending optical illusions that transform flat surfaces into immersive 3D experiences.</p>
+                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="Branding">
+                            <div class="card-body p-4 text-center">
+                                <h3>Brand Activation</h3>
+                                <p class="text-secondary">Custom pavement logos and promotional murals designed to stop traffic and build brand awareness.</p>
+                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="Festivals">
+                            <div class="card-body p-4 text-center">
+                                <h3>Festival Murals</h3>
+                                <p class="text-secondary">Large-scale collaborative art pieces that engage communities during public events and festivals.</p>
+                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="Live Painting">
+                            <div class="card-body p-4 text-center">
+                                <h3>Live Art Shows</h3>
+                                <p class="text-secondary">Engaging live performances where artists create massive works in real-time for an audience.</p>
+                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=600" class="card-img-top service-img" alt="Workshops">
+                            <div class="card-body p-4 text-center">
+                                <h3>Chalk Workshops</h3>
+                                <p class="text-secondary">Educational sessions for schools and corporate teams to learn the basics of street illustration.</p>
+                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600" class="card-img-top service-img" alt="Corporate">
+                            <div class="card-body p-4 text-center">
+                                <h3>Corporate Events</h3>
+                                <p class="text-secondary">Sophisticated pavement art for galas, product launches, and private corporate gatherings.</p>
+                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Packages -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Our Service Packages</h2>
+                    <p class="text-secondary">Choose the perfect scale for your event or project.</p>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="package-card text-center">
+                            <h5>Essential</h5>
+                            <h2>$499 <small class="fs-6 text-secondary">/project</small></h2>
+                            <p>Perfect for small private events.</p>
+                            <ul class="text-start">
+                                <li><i class="bi bi-check-circle-fill"></i> 4x4 ft 2D Mural</li>
+                                <li><i class="bi bi-check-circle-fill"></i> 1 Artist</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Up to 4 Hours</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Eco-friendly Chalk</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="package-card featured text-center">
+                            <h5>Professional</h5>
+                            <h2>$1,299 <small class="fs-6 text-secondary">/project</small></h2>
+                            <p>Ideal for festivals & branding.</p>
+                            <ul class="text-start">
+                                <li><i class="bi bi-check-circle-fill"></i> 10x10 ft 3D Mural</li>
+                                <li><i class="bi bi-check-circle-fill"></i> 2 Artists</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Full Day Execution</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Social Media Content</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Time-lapse Video</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="package-card text-center">
+                            <h5>Enterprise</h5>
+                            <h2>Custom <small class="fs-6 text-secondary">/quote</small></h2>
+                            <p>For large-scale public installations.</p>
+                            <ul class="text-start">
+                                <li><i class="bi bi-check-circle-fill"></i> Unlimited Scale</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Global Team Access</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Permanent Paint Options</li>
+                                <li><i class="bi bi-check-circle-fill"></i> National Marketing Rights</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary w-100">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service FAQ -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h2 class="section-title">Common Questions</h2>
+                            <p class="text-secondary">Everything you need to know about our street art services.</p>
+                        </div>
+                        <div class="accordion" id="serviceFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        How long do the illustrations typically last?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#serviceFAQ">
+                                    <div class="accordion-body">
+                                        Standard chalk illustrations typically last until the first heavy rain or until significant foot traffic wears them down (usually 2-5 days). For longer durations, we offer temporary "rain-resistant" chalk or semi-permanent paints.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        Are the materials safe for the environment?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
+                                    <div class="accordion-body">
+                                        Yes! We use 100% non-toxic, eco-friendly chalk and pastels. They are safe for children, pets, and the local ecosystem, and wash away naturally with water.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Do you travel for international events?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
+                                    <div class="accordion-body">
+                                        Absolutely. ChalkMaster represents artists globally, and we can arrange travel for our leads or coordinate with local artists in our network to fulfill your requirements anywhere in the world.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        What surfaces are best for pavement art?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
+                                    <div class="accordion-body">
+                                        Smooth concrete, asphalt, and pavement slabs are ideal. Very rough surfaces or porous stones might require a temporary base coating to achieve the best color vibrancy and detail.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo mb-3 d-inline-block" href="index.html">
+                        <i class="bi bi-brush"></i> ChalkMaster
+                    </a>
+                    <p class="opacity-75">Pioneering the world of pavement art since 2015. We bring color and illusion to every corner of the world.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Support</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="opacity-75 mb-3">Get the latest street art updates directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-75">
+                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

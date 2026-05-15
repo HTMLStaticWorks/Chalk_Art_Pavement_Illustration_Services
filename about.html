@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | ChalkMaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            <div class="d-flex align-items-center order-lg-last gap-2">
+                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
+                    RTL
+                </button>
+                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
+                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item mt-3">
+                    <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-5 bg-primary text-white">
+            <div class="container text-center py-5">
+                <h1 class="display-3 fw-bold">Our Story</h1>
+                <p class="lead">Bringing temporary art to permanent memories.</p>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000" class="img-fluid rounded-4" alt="Team">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">We are a Collective of Visionaries</h2>
+                        <p class="text-secondary mb-4">Founded in 2015, ChalkMaster began as a small group of street artists who wanted to change how people interact with urban spaces. Today, we are a global agency representing the finest pavement illustrators.</p>
+                        <p class="text-secondary mb-4">Our mission is simple: to transform the mundane grey of the city into a vibrant canvas for imagination and storytelling.</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="card stat-card p-4 text-center">
+                                    <h3 class="text-primary mb-1">10+</h3>
+                                    <p class="mb-0">Years of Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card stat-card p-4 text-center">
+                                    <h3 class="text-primary mb-1">25+</h3>
+                                    <p class="mb-0">Global Artists</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Our Core Values</h2>
+                    <p class="text-secondary">The principles that guide every stroke of our chalk.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="value-card">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=400" alt="Creativity" class="value-img mb-4">
+                            <h4>Creativity</h4>
+                            <p class="text-secondary mb-0">Pushing the boundaries of what's possible on a pavement.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="value-card">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=400" alt="Sustainability" class="value-img mb-4">
+                            <h4>Sustainability</h4>
+                            <p class="text-secondary mb-0">Using eco-friendly, non-toxic materials for all our work.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="value-card">
+                            <i class="bi bi-people d-none"></i> <!-- Kept for fallback if needed, but hidden -->
+                            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=400" alt="Community" class="value-img mb-4">
+                            <h4>Community</h4>
+                            <p class="text-secondary mb-0">Engaging with the public and bringing people together.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="value-card">
+                            <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?auto=format&fit=crop&q=80&w=400" alt="Excellence" class="value-img mb-4">
+                            <h4>Excellence</h4>
+                            <p class="text-secondary mb-0">Delivering world-class art with meticulous attention to detail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-5 bg-white">
+            <div class="container text-center">
+                <h2 class="mb-5">Meet the Leads</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="team-card text-center p-4">
+                            <div class="team-img-wrapper mb-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" class="team-img" alt="Julian Vester">
+                            </div>
+                            <h4>Julian Vester</h4>
+                            <p class="text-primary mb-3">Founder & Creative Director</p>
+                            <div class="team-social">
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-card text-center p-4">
+                            <div class="team-img-wrapper mb-4">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400" class="team-img" alt="Elena Rossi">
+                            </div>
+                            <h4>Elena Rossi</h4>
+                            <p class="text-primary mb-3">Head of 3D Design</p>
+                            <div class="team-social">
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-card text-center p-4">
+                            <div class="team-img-wrapper mb-4">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400" class="team-img" alt="Marcus Chen">
+                            </div>
+                            <h4>Marcus Chen</h4>
+                            <p class="text-primary mb-3">Events Coordinator</p>
+                            <div class="team-social">
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Journey Timeline -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Our Journey</h2>
+                    <p class="text-secondary">How we grew from a small collective to a global agency.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h4 class="text-primary">2015</h4>
+                            <p>Founded by Julian Vester in a small studio in Berlin with 3 fellow artists.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h4 class="text-primary">2018</h4>
+                            <p>Created our first viral 3D mural for the International Street Art Festival.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h4 class="text-primary">2021</h4>
+                            <p>Expanded to representation in 15 countries and 25 full-time artists.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h4 class="text-primary">2024</h4>
+                            <p>Awarded "Innovative Design Agency of the Year" for our urban activation projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo mb-3 d-inline-block" href="index.html">
+                        <i class="bi bi-brush"></i> ChalkMaster
+                    </a>
+                    <p class="opacity-75">Pioneering the world of pavement art since 2015. We bring color and illusion to every corner of the world.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Support</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="opacity-75 mb-3">Get the latest street art updates directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-75">
+                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

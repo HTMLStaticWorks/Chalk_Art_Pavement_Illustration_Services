@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | ChalkMaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-light">
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-column" id="sidebar">
+        <div class="p-4 border-bottom border-light border-opacity-10">
+            <a class="navbar-brand text-white d-flex align-items-center gap-2" href="index.html">
+                <i class="bi bi-brush fs-4 text-primary"></i> <span class="fw-bold fs-5">ChalkMaster</span>
+            </a>
+        </div>
+        <ul class="nav flex-column mt-3 flex-grow-1">
+            <li class="nav-item">
+                <a class="nav-link active" href="#analytics" data-bs-toggle="tab"><i class="bi bi-graph-up me-2"></i> Analytics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#users" data-bs-toggle="tab"><i class="bi bi-people me-2"></i> Users</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#orders" data-bs-toggle="tab"><i class="bi bi-cart me-2"></i> Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#messages" data-bs-toggle="tab"><i class="bi bi-chat-left-text me-2"></i> Messages</a>
+            </li>
+        </ul>
+        <div class="p-4 border-top border-light border-opacity-10">
+            <a href="index.html" class="nav-link text-white opacity-75"><i class="bi bi-box-arrow-left me-2"></i> Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white rounded-3 shadow-sm mb-4 p-3">
+            <div class="container-fluid">
+                <button class="btn btn-outline-secondary d-lg-none" id="sidebarToggle">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="ms-auto d-flex align-items-center gap-3">
+                    <button class="btn btn-link text-secondary position-relative p-0">
+                        <i class="bi bi-bell fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">3</span>
+                    </button>
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100" alt="Admin" width="32" height="32" class="rounded-circle me-2">
+                            <strong>Admin</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Analytics Tab -->
+            <div class="tab-pane fade show active" id="analytics">
+                <h2 class="mb-4">Overview</h2>
+                <div class="row g-4 mb-4">
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm rounded-3 p-3 border-start border-primary border-4 h-100">
+                            <div class="text-secondary small">Total Revenue</div>
+                            <div class="fs-3 fw-bold text-dark">$24,500</div>
+                            <div class="text-success small"><i class="bi bi-arrow-up"></i> 12% this month</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm rounded-3 p-3 border-start border-success border-4 h-100">
+                            <div class="text-secondary small">New Bookings</div>
+                            <div class="fs-3 fw-bold text-dark">18</div>
+                            <div class="text-success small"><i class="bi bi-arrow-up"></i> 5% this month</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm rounded-3 p-3 border-start border-warning border-4 h-100">
+                            <div class="text-secondary small">Active Artists</div>
+                            <div class="fs-3 fw-bold text-dark">12</div>
+                            <div class="text-muted small">Stable</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm rounded-3 p-3 border-start border-info border-4 h-100">
+                            <div class="text-secondary small">Pending Inquiries</div>
+                            <div class="fs-3 fw-bold text-dark">7</div>
+                            <div class="text-danger small"><i class="bi bi-arrow-down"></i> Needs attention</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Users Tab -->
+            <div class="tab-pane fade" id="users">
+                <h2 class="mb-4">Manage Users</h2>
+                <div class="card border-0 shadow-sm rounded-3">
+                    <div class="card-body">
+                        <p class="text-secondary">User management functionality will go here.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orders Tab -->
+            <div class="tab-pane fade" id="orders">
+                <h2 class="mb-4">Recent Orders</h2>
+                <div class="card border-0 shadow-sm rounded-3">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Client</th>
+                                        <th>Service</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#ORD-001</td>
+                                        <td>City Festival</td>
+                                        <td>3D Street Art</td>
+                                        <td>Oct 20, 2026</td>
+                                        <td><span class="badge bg-success">Completed</span></td>
+                                        <td><button class="btn btn-sm btn-outline-primary">View</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-002</td>
+                                        <td>Tech Corp</td>
+                                        <td>Brand Activation</td>
+                                        <td>Nov 05, 2026</td>
+                                        <td><span class="badge bg-warning">Pending</span></td>
+                                        <td><button class="btn btn-sm btn-outline-primary">View</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages Tab -->
+            <div class="tab-pane fade" id="messages">
+                <h2 class="mb-4">Messages</h2>
+                <div class="card border-0 shadow-sm rounded-3">
+                    <div class="card-body">
+                        <p class="text-secondary">Message center functionality will go here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

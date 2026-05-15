@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details | ChalkMaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            <div class="d-flex align-items-center order-lg-last gap-2">
+                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
+                    RTL
+                </button>
+                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
+                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item mt-3">
+                    <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                        <li class="breadcrumb-item active">3D Street Art</li>
+                    </ol>
+                </nav>
+                <div class="row g-5">
+                    <div class="col-lg-8">
+                        <img src="https://images.unsplash.com/photo-1541888941295-1e8762df43b4?auto=format&fit=crop&q=80&w=1000" class="img-fluid rounded-4 mb-4" alt="Service">
+                        <h2 class="mb-4">3D Street Art Illusions</h2>
+                        <p class="text-secondary">Our 3D Street Art is more than just a painting; it's a social media engine. We use anamorphic perspective techniques to create images that appear three-dimensional when viewed from a specific point.</p>
+                        <p class="text-secondary">Perfect for product launches, festivals, and public space activations where engagement is the priority.</p>
+                        
+                        <h4 class="mt-5 mb-4">Frequently Asked Questions</h4>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        How long does it last?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary">
+                                        Typically, chalk art lasts 3-7 days depending on foot traffic and weather conditions. We also offer semi-permanent options.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        What if it rains?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary">
+                                        Light rain may cause slight blurring, but heavy rain will wash it away. We can use fixatives to improve durability or provide weather-resistant temporary paint.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-4 border-primary">
+                            <h4 class="mb-4">Service Pricing</h4>
+                            <ul class="list-unstyled mb-4">
+                                <li class="d-flex justify-content-between mb-2">
+                                    <span>Small Mural (5x5ft)</span>
+                                    <span class="fw-bold">$499</span>
+                                </li>
+                                <li class="d-flex justify-content-between mb-2">
+                                    <span>Medium Mural (10x10ft)</span>
+                                    <span class="fw-bold">$999</span>
+                                </li>
+                                <li class="d-flex justify-content-between mb-2">
+                                    <span>Large Mural (20x20ft)</span>
+                                    <span class="fw-bold">$1,999</span>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary w-100">Get Custom Quote</a>
+                        </div>
+                        
+                        <div class="card p-4 mt-4 bg-secondary text-white">
+                            <h4>Material Safety</h4>
+                            <p class="small opacity-75">We use non-toxic, eco-friendly chalks and pastels that are 100% biodegradable and safe for public drainage systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo mb-3 d-inline-block" href="index.html">
+                        <i class="bi bi-brush"></i> ChalkMaster
+                    </a>
+                    <p class="opacity-75">Pioneering the world of pavement art since 2015. We bring color and illusion to every corner of the world.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Support</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="opacity-75 mb-3">Get the latest street art updates directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-75">
+                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

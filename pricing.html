@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | ChalkMaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            <div class="d-flex align-items-center order-lg-last gap-2">
+                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
+                    RTL
+                </button>
+                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
+                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brush"></i> ChalkMaster
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item active"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item mt-3">
+                    <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="py-5 bg-primary text-white">
+            <div class="container text-center py-5">
+                <h1 class="display-3 fw-bold">Transparent Pricing</h1>
+                <p class="lead">Packages tailored for events of all sizes.</p>
+            </div>
+        </section>
+
+        <section class="py-5 pt-lg-5 mt-4">
+            <div class="container">
+                <div class="row g-4 align-items-center justify-content-center">
+                    <!-- Standard Plan -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card p-4 text-center border-0 shadow-sm h-100">
+                            <h3 class="mb-3">Standard Mural</h3>
+                            <h2 class="display-5 fw-bold text-primary mb-3">$499</h2>
+                            <p class="text-secondary mb-4">Perfect for small businesses and local promotions.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Up to 5x5 ft size</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> 2D Illustration</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Standard Chalk Colors</li>
+                                <li class="mb-2 text-muted"><i class="bi bi-x text-muted me-2"></i> Time-lapse Video</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary w-100 mt-auto">Choose Standard</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Pro Plan (Featured) -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card p-5 text-center border-primary shadow-lg h-100 position-relative" style="overflow: visible;">
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-4 py-2 shadow-sm" style="z-index: 10;">Most Popular</span>
+                            <h3 class="mb-3">3D Illusion</h3>
+                            <h2 class="display-5 fw-bold text-primary mb-3">$1,299</h2>
+                            <p class="text-secondary mb-4">Designed for maximum social media impact.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Up to 15x15 ft size</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Anamorphic 3D Design</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Premium Weather-resistant Chalk</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Basic Time-lapse Video</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary w-100 mt-auto">Choose 3D Illusion</a>
+                        </div>
+                    </div>
+ 
+                    <!-- Enterprise Plan -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card p-4 text-center border-0 shadow-sm h-100">
+                            <h3 class="mb-3">Festival/Corporate</h3>
+                            <h2 class="display-5 fw-bold text-primary mb-3">Custom</h2>
+                            <p class="text-secondary mb-4">Large scale events requiring multiple artists.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Unlimited Size</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Multiple Artists</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Brand Integration</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Pro Video Production</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary w-100 mt-auto">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional Extras -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Optional Add-ons</h2>
+                    <p class="text-secondary">Enhance your project with these specialized extras.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="addon-card text-center">
+                            <div class="addon-icon"><i class="bi bi-camera-video"></i></div>
+                            <h6>Pro Time-lapse</h6>
+                            <p class="small text-secondary mb-0">High-res 4K production</p>
+                            <span class="text-primary fw-bold">+$250</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="addon-card text-center">
+                            <div class="addon-icon"><i class="bi bi-droplet"></i></div>
+                            <h6>Permanent Seal</h6>
+                            <p class="small text-secondary mb-0">Rain-proof coating</p>
+                            <span class="text-primary fw-bold">+$150</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="addon-card text-center">
+                            <div class="addon-icon"><i class="bi bi-lightning"></i></div>
+                            <h6>Rush Booking</h6>
+                            <p class="small text-secondary mb-0">Execution within 48h</p>
+                            <span class="text-primary fw-bold">+$200</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="addon-card text-center">
+                            <div class="addon-icon"><i class="bi bi-megaphone"></i></div>
+                            <h6>Live Engagement</h6>
+                            <p class="small text-secondary mb-0">Interactive guest area</p>
+                            <span class="text-primary fw-bold">+$300</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Process -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">How to Book</h2>
+                    <p class="text-secondary">Our simple 4-step process to bring art to your space.</p>
+                </div>
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <h5>Consultation</h5>
+                            <p class="text-secondary small">Share your vision and location details with us.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <h5>Design Mockup</h5>
+                            <p class="text-secondary small">We provide a digital sketch for your approval.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <h5>Live Creation</h5>
+                            <p class="text-secondary small">Our artists bring the design to life on site.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <h5>Enjoy Art</h5>
+                            <p class="text-secondary small">Capture memories and engage your audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo mb-3 d-inline-block" href="index.html">
+                        <i class="bi bi-brush"></i> ChalkMaster
+                    </a>
+                    <p class="opacity-75">Pioneering the world of pavement art since 2015. We bring color and illusion to every corner of the world.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-4">Support</h5>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="opacity-75 mb-3">Get the latest street art updates directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-75">
+                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
