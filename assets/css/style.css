@@ -13,8 +13,8 @@
     --tertiary-color: #f8f9fa;
     --text-dark: #212529;
     --text-light: #f8f9fa;
-    --brand-color: #8b5cf6;
-    --brand-gradient: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+    --brand-color: #ff6600;
+    --brand-gradient: linear-gradient(135deg, #ff6600 0%, #ff9800 100%);
     --transition: all 0.3s ease;
 }
 
@@ -112,17 +112,14 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
     font-weight: 800;
     font-size: 1.5rem;
-    background: var(--brand-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ff6600 !important;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
 .navbar-brand i {
-    -webkit-text-fill-color: initial;
-    color: var(--brand-color);
+    color: #ff6600 !important;
 }
 
 .nav-link {
@@ -389,29 +386,26 @@ footer a:hover {
     color: var(--primary-color);
 }
 
-.footer-logo {
+.footer-logo, 
+.footer-logo:hover {
     font-size: 1.5rem;
     font-weight: 800;
-    background: var(--brand-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ff6600 !important;
     display: inline-block;
 }
 
-.footer-logo i {
-    -webkit-text-fill-color: initial;
-    color: var(--brand-color);
+.footer-logo i,
+.footer-logo:hover i {
+    color: #ff6600 !important;
 }
 
 .brand-text {
-    background: var(--brand-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ff6600 !important;
     font-weight: 800;
 }
 
 .text-brand {
-    color: var(--brand-color) !important;
+    color: #ff6600 !important;
 }
 
 /* Back to Top */
@@ -1101,7 +1095,7 @@ footer {
 .footer-logo {
     font-weight: 800;
     font-size: 1.5rem;
-    color: white !important;
+    color: #ff6600 !important;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -1311,5 +1305,45 @@ footer h5 {
         -webkit-line-clamp: unset;
         display: block;
     }
+}
+
+
+/* Social Icon Buttons */
+.social-icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.05);
+    font-size: 1.1rem;
+}
+
+[data-bs-theme="dark"] .social-icon-btn {
+    background: #2c3034;
+    color: white;
+    border-color: rgba(255,255,255,0.1);
+}
+
+.social-icon-btn:hover {
+    transform: translateY(-5px);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.social-icon-btn.facebook:hover { background-color: #1877F2; border-color: #1877F2; }
+.social-icon-btn.instagram:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); border-color: transparent; }
+.social-icon-btn.twitter:hover { background-color: #000000; border-color: #000000; }
+.social-icon-btn.linkedin:hover { background-color: #0077b5; border-color: #0077b5; }
+.social-icon-btn.youtube:hover { background-color: #FF0000; border-color: #FF0000; }
+.social-icon-btn.lg {
+    width: 75px;
+    height: 75px;
+    font-size: 2.2rem;
 }
 
