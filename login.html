@@ -13,10 +13,8 @@
 <body class="bg-light">
     <!-- Page Toggles -->
     <div class="position-fixed top-0 end-0 p-3 z-3 d-flex gap-2">
-        <button id="rtlToggle" class="btn page-toggle" title="Toggle RTL">
-            <span style="font-weight: 800; font-size: 0.65rem;">RTL</span>
-        </button>
-        <button id="themeToggle" class="btn page-toggle" title="Toggle Theme">
+        <button id="rtlToggle" class="btn page-toggle rtl-toggle-btn" title="Toggle RTL">RTL</button>
+        <button id="themeToggle" class="btn page-toggle theme-toggle-btn" title="Toggle Theme">
             <i class="bi bi-moon-fill"></i>
         </button>
     </div>
@@ -28,7 +26,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-5 col-xl-4">
                     <div class="card shadow-sm border-0 rounded-4">
-                        <div class="card-body p-4 p-md-5">
+                        <div class="card-body p-4">
                             <div class="text-center mb-4">
                                 <a class="navbar-brand justify-content-center fs-2 mb-3" href="index.html">
                                     <i class="bi bi-brush"></i> ChalkMaster
@@ -49,12 +47,12 @@
                                         <span class="password-toggle"><i class="bi bi-eye"></i></span>
                                     </div>
                                 </div>
-                                <div class="mb-4 d-flex justify-content-between align-items-center">
-                                    <div class="form-check mb-0">
+                                <div class="mb-4 d-flex justify-content-between align-items-center flex-nowrap gap-2">
+                                    <div class="form-check mb-0 flex-shrink-0">
                                         <input type="checkbox" class="form-check-input" id="rememberMe">
-                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                        <label class="form-check-label text-nowrap" for="rememberMe">Remember me</label>
                                     </div>
-                                    <a href="#" class="text-primary text-decoration-none small fw-medium">Forgot Password?</a>
+                                    <a href="#" class="text-primary text-decoration-none small fw-medium text-nowrap">Forgot Password?</a>
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100 py-2 mb-4" style="border-radius: 10px;">Log In</button>
                                 
@@ -72,7 +70,7 @@
                                     </button>
                                 </div>
                                 
-                                <p class="text-center mb-0 text-secondary">
+                                <p class="text-center mb-0 text-secondary" style="white-space: nowrap;">
                                     Don't have an account? <a href="register.html" class="text-primary fw-bold text-decoration-none">Sign Up</a>
                                 </p>
                             </form>
@@ -87,3 +85,6 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+

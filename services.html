@@ -18,14 +18,10 @@
                 <i class="bi bi-brush"></i> ChalkMaster
             </a>
             <div class="d-flex align-items-center order-lg-last gap-2">
-                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
-                    RTL
-                </button>
-                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
-                    <i class="bi bi-moon-fill"></i>
-                </button>
-                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
-                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <button id="rtlToggle" class="btn page-toggle rtl-toggle-btn d-none d-lg-inline-flex" title="Toggle RTL">RTL</button>
+                <button id="themeToggle" class="btn page-toggle theme-toggle-btn me-2 d-none d-lg-inline-flex" title="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                <a href="login.html" class="btn btn-outline-primary d-none d-lg-inline-block">Login</a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -63,9 +59,12 @@
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item mt-3">
                     <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
-                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
                 </li>
             </ul>
+            <div class="border-top pt-3 mt-2 d-flex justify-content-center gap-3">
+                <button class="btn page-toggle rtl-toggle-btn" title="Toggle RTL">RTL</button>
+                <button class="btn page-toggle theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+            </div>
         </div>
     </div>
 
@@ -82,68 +81,80 @@
             <div class="container">
                 <div class="row g-4">
                     <!-- Service 1 -->
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12">
                         <div class="card h-100 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="3D Art">
-                            <div class="card-body p-4 text-center">
+                            <div class="card-body p-4 text-center d-flex flex-column">
                                 <h3>3D Street Art</h3>
                                 <p class="text-secondary">Mind-bending optical illusions that transform flat surfaces into immersive 3D experiences.</p>
-                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                <div class="mt-auto">
+                                    <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Service 2 -->
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12">
                         <div class="card h-100 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="Branding">
-                            <div class="card-body p-4 text-center">
+                            <div class="card-body p-4 text-center d-flex flex-column">
                                 <h3>Brand Activation</h3>
                                 <p class="text-secondary">Custom pavement logos and promotional murals designed to stop traffic and build brand awareness.</p>
-                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                <div class="mt-auto">
+                                    <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Service 3 -->
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12">
                         <div class="card h-100 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="Festivals">
-                            <div class="card-body p-4 text-center">
+                            <div class="card-body p-4 text-center d-flex flex-column">
                                 <h3>Festival Murals</h3>
                                 <p class="text-secondary">Large-scale collaborative art pieces that engage communities during public events and festivals.</p>
-                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                <div class="mt-auto">
+                                    <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Service 4 -->
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12">
                         <div class="card h-100 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="Live Painting">
-                            <div class="card-body p-4 text-center">
+                            <div class="card-body p-4 text-center d-flex flex-column">
                                 <h3>Live Art Shows</h3>
                                 <p class="text-secondary">Engaging live performances where artists create massive works in real-time for an audience.</p>
-                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                <div class="mt-auto">
+                                    <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Service 5 -->
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12">
                         <div class="card h-100 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=600" class="card-img-top service-img" alt="Workshops">
-                            <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="Workshops">
+                            <div class="card-body p-4 text-center d-flex flex-column">
                                 <h3>Chalk Workshops</h3>
                                 <p class="text-secondary">Educational sessions for schools and corporate teams to learn the basics of street illustration.</p>
-                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                <div class="mt-auto">
+                                    <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Service 6 -->
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12">
                         <div class="card h-100 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600" class="card-img-top service-img" alt="Corporate">
-                            <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" class="card-img-top service-img" alt="Corporate">
+                            <div class="card-body p-4 text-center d-flex flex-column">
                                 <h3>Corporate Events</h3>
                                 <p class="text-secondary">Sophisticated pavement art for galas, product launches, and private corporate gatherings.</p>
-                                <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                <div class="mt-auto">
+                                    <a href="service-details.html" class="btn btn-primary mt-3">View Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -170,7 +181,7 @@
                                 <li><i class="bi bi-check-circle-fill"></i> Up to 4 Hours</li>
                                 <li><i class="bi bi-check-circle-fill"></i> Eco-friendly Chalk</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-outline-primary w-100">Book Now</a>
+                            <a href="contact.html" class="btn btn-outline-primary w-100 mt-auto">Book Now</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -185,7 +196,7 @@
                                 <li><i class="bi bi-check-circle-fill"></i> Social Media Content</li>
                                 <li><i class="bi bi-check-circle-fill"></i> Time-lapse Video</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-primary w-100">Book Now</a>
+                            <a href="contact.html" class="btn btn-primary w-100 mt-auto">Book Now</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -199,7 +210,7 @@
                                 <li><i class="bi bi-check-circle-fill"></i> Permanent Paint Options</li>
                                 <li><i class="bi bi-check-circle-fill"></i> National Marketing Rights</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-outline-primary w-100">Get a Quote</a>
+                            <a href="contact.html" class="btn btn-outline-primary w-100 mt-auto">Get a Quote</a>
                         </div>
                     </div>
                 </div>
@@ -318,7 +329,7 @@
             </div>
             <hr class="my-5 opacity-25">
             <div class="text-center opacity-75">
-                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+                <p>&copy; 2026 <span class="text-brand fw-bold">ChalkMaster</span>. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -329,3 +340,6 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+

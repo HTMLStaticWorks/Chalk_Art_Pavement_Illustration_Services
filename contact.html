@@ -18,14 +18,10 @@
                 <i class="bi bi-brush"></i> ChalkMaster
             </a>
             <div class="d-flex align-items-center order-lg-last gap-2">
-                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
-                    RTL
-                </button>
-                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
-                    <i class="bi bi-moon-fill"></i>
-                </button>
-                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
-                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <button id="rtlToggle" class="btn page-toggle rtl-toggle-btn d-none d-lg-inline-flex" title="Toggle RTL">RTL</button>
+                <button id="themeToggle" class="btn page-toggle theme-toggle-btn me-2 d-none d-lg-inline-flex" title="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                <a href="login.html" class="btn btn-outline-primary d-none d-lg-inline-block">Login</a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -54,7 +50,8 @@
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav gap-2">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
@@ -62,9 +59,12 @@
                 <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                 <li class="nav-item mt-3">
                     <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
-                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
                 </li>
             </ul>
+            <div class="border-top pt-3 mt-2 d-flex justify-content-center gap-3">
+                <button class="btn page-toggle rtl-toggle-btn" title="Toggle RTL">RTL</button>
+                <button class="btn page-toggle theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+            </div>
         </div>
     </div>
 
@@ -112,26 +112,26 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="row g-4 mb-4">
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="bg-primary-subtle text-primary p-3 rounded-circle me-3 fs-4">
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6 pe-md-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-primary-subtle text-primary p-3 rounded-circle me-3 fs-5 flex-shrink-0">
                                         <i class="bi bi-geo-alt"></i>
                                     </div>
                                     <div>
-                                        <h5 class="mb-1">Our Studio</h5>
-                                        <p class="text-secondary mb-0">123 Art Lane, Creative District<br>New York, NY 10001</p>
+                                        <h6 class="mb-1 fw-bold" style="font-size: 0.95rem;">Our Studio</h6>
+                                        <p class="text-secondary mb-0" style="font-size: 0.82rem; line-height: 1.5;">123 Art Lane, Creative District<br>New York, NY 10001</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="bg-primary-subtle text-primary p-3 rounded-circle me-3 fs-4">
+                            <div class="col-md-6 ps-md-4 border-start-md">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-primary-subtle text-primary p-3 rounded-circle me-3 fs-5 flex-shrink-0">
                                         <i class="bi bi-envelope"></i>
                                     </div>
                                     <div>
-                                        <h5 class="mb-1">Email Us</h5>
-                                        <p class="text-secondary mb-0">hello@chalkmaster.com<br>bookings@chalkmaster.com</p>
+                                        <h6 class="mb-1 fw-bold" style="font-size: 0.95rem;">Email Us</h6>
+                                        <p class="text-secondary mb-0" style="font-size: 0.82rem; line-height: 1.5;">hello@chalkmaster.com<br>bookings@chalkmaster.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -244,7 +244,7 @@
             </div>
             <hr class="my-5 opacity-25">
             <div class="text-center opacity-75">
-                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+                <p>&copy; 2026 <span class="text-brand fw-bold">ChalkMaster</span>. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -254,3 +254,6 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+

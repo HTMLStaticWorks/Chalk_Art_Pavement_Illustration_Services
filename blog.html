@@ -18,14 +18,10 @@
                 <i class="bi bi-brush"></i> ChalkMaster
             </a>
             <div class="d-flex align-items-center order-lg-last gap-2">
-                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
-                    RTL
-                </button>
-                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
-                    <i class="bi bi-moon-fill"></i>
-                </button>
-                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
-                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <button id="rtlToggle" class="btn page-toggle rtl-toggle-btn d-none d-lg-inline-flex" title="Toggle RTL">RTL</button>
+                <button id="themeToggle" class="btn page-toggle theme-toggle-btn me-2 d-none d-lg-inline-flex" title="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                <a href="login.html" class="btn btn-outline-primary d-none d-lg-inline-block">Login</a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -54,7 +50,8 @@
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav gap-2">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
@@ -62,9 +59,12 @@
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item mt-3">
                     <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
-                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
                 </li>
             </ul>
+            <div class="border-top pt-3 mt-2 d-flex justify-content-center gap-3">
+                <button class="btn page-toggle rtl-toggle-btn" title="Toggle RTL">RTL</button>
+                <button class="btn page-toggle theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+            </div>
         </div>
     </div>
 
@@ -123,13 +123,13 @@
                 <!-- Blog Posts -->
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Tutorials">
-                            <div class="card-body p-4">
-                                <span class="badge bg-primary-subtle text-primary mb-2">Tutorials</span>
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?auto=format&fit=crop&q=80&w=600" class="card-img-top blog-card-img" alt="Tutorials">
+                            <div class="card-body blog-card-body p-4 d-flex flex-column">
+                                <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Tutorials</span>
                                 <h4><a href="blog-details.html" class="text-decoration-none text-dark">How to Prepare the Perfect Chalk Base</a></h4>
                                 <p class="text-secondary mb-3">Learn the professional techniques for laying down a solid base layer for your pavement murals.</p>
-                                <div class="d-flex align-items-center text-secondary small">
+                                <div class="mt-auto d-flex align-items-center text-secondary small">
                                     <i class="bi bi-calendar me-2"></i> Oct 15, 2026
                                     <i class="bi bi-person ms-3 me-2"></i> Julian V.
                                 </div>
@@ -137,13 +137,13 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Festivals">
-                            <div class="card-body p-4">
-                                <span class="badge bg-primary-subtle text-primary mb-2">Festivals</span>
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=600" class="card-img-top blog-card-img" alt="Festivals">
+                            <div class="card-body blog-card-body p-4 d-flex flex-column">
+                                <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Festivals</span>
                                 <h4><a href="blog-details.html" class="text-decoration-none text-dark">Top 10 Global Chalk Art Festivals to Visit</a></h4>
                                 <p class="text-secondary mb-3">Pack your bags and prepare to be amazed by these incredible international street painting events.</p>
-                                <div class="d-flex align-items-center text-secondary small">
+                                <div class="mt-auto d-flex align-items-center text-secondary small">
                                     <i class="bi bi-calendar me-2"></i> Sep 28, 2026
                                     <i class="bi bi-person ms-3 me-2"></i> Elena R.
                                 </div>
@@ -151,13 +151,13 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="3D Illusions">
-                            <div class="card-body p-4">
-                                <span class="badge bg-primary-subtle text-primary mb-2">Interviews</span>
+                        <div class="card h-100 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=600" class="card-img-top blog-card-img" alt="3D Illusions">
+                            <div class="card-body blog-card-body p-4 d-flex flex-column">
+                                <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Interviews</span>
                                 <h4><a href="blog-details.html" class="text-decoration-none text-dark">The Mind Behind the 3D Illusions: An Interview</a></h4>
                                 <p class="text-secondary mb-3">We sat down with renowned anamorphic artist Kurt Wenner to discuss the evolution of 3D street art.</p>
-                                <div class="d-flex align-items-center text-secondary small">
+                                <div class="mt-auto d-flex align-items-center text-secondary small">
                                     <i class="bi bi-calendar me-2"></i> Sep 10, 2026
                                     <i class="bi bi-person ms-3 me-2"></i> Marcus C.
                                 </div>
@@ -270,7 +270,7 @@
             </div>
             <hr class="my-5 opacity-25">
             <div class="text-center opacity-75">
-                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+                <p>&copy; 2026 <span class="text-brand fw-bold">ChalkMaster</span>. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -280,3 +280,6 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+

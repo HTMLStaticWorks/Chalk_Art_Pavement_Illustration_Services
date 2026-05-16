@@ -26,14 +26,12 @@
             </a>
             
             <div class="d-flex align-items-center order-lg-last gap-2">
-                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
-                    RTL
-                </button>
-                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
+                <button id="rtlToggle" class="btn page-toggle rtl-toggle-btn d-none d-lg-inline-flex" title="Toggle RTL">RTL</button>
+                <button id="themeToggle" class="btn page-toggle theme-toggle-btn me-2 d-none d-lg-inline-flex" title="Toggle Theme">
                     <i class="bi bi-moon-fill"></i>
                 </button>
-                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
-                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <a href="login.html" class="btn btn-outline-primary d-none d-lg-inline-block">Login</a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -72,9 +70,12 @@
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item mt-3">
                     <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
-                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
                 </li>
             </ul>
+            <div class="border-top pt-3 mt-2 d-flex justify-content-center gap-3">
+                <button class="btn page-toggle rtl-toggle-btn" title="Toggle RTL">RTL</button>
+                <button class="btn page-toggle theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+            </div>
         </div>
     </div>
 
@@ -101,25 +102,25 @@
         <section class="py-5 bg-light">
             <div class="container">
                 <div class="row text-center g-4">
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="card stat-card h-100 p-4 border-1">
                             <h2 class="display-5 fw-bold text-primary">500+</h2>
                             <p class="text-secondary mb-0">Murals Created</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="card stat-card h-100 p-4 border-1">
                             <h2 class="display-5 fw-bold text-primary">120+</h2>
                             <p class="text-secondary mb-0">Global Festivals</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="card stat-card h-100 p-4 border-1">
                             <h2 class="display-5 fw-bold text-primary">50+</h2>
                             <p class="text-secondary mb-0">Awards Won</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="card stat-card h-100 p-4 border-1">
                             <h2 class="display-5 fw-bold text-primary">100%</h2>
                             <p class="text-secondary mb-0">Client Satisfaction</p>
@@ -138,35 +139,41 @@
                 </div>
                 <div class="row g-4">
                     <!-- Service 1 -->
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card h-100 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=800" alt="3D Street Art" class="card-img-top service-img">
-                            <div class="card-body p-4">
+                            <div class="card-body p-4 d-flex flex-column">
                                 <h3>3D Street Art</h3>
                                 <p class="text-secondary">Optical illusions that pop off the ground, perfect for social media moments.</p>
-                                <a href="service-details.html" class="text-primary fw-bold text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                                <div class="mt-auto">
+                                    <a href="service-details.html" class="text-primary fw-bold text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Service 2 -->
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card h-100 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=800" alt="Corporate Branding" class="card-img-top service-img">
-                            <div class="card-body p-4">
+                            <div class="card-body p-4 d-flex flex-column">
                                 <h3>Corporate Branding</h3>
                                 <p class="text-secondary">Unique pavement advertising and brand activation murals.</p>
-                                <a href="service-details.html" class="text-primary fw-bold text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                                <div class="mt-auto">
+                                    <a href="service-details.html" class="text-primary fw-bold text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Service 3 -->
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card h-100 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" alt="Festival Murals" class="card-img-top service-img">
-                            <div class="card-body p-4">
+                            <div class="card-body p-4 d-flex flex-column">
                                 <h3>Festival Murals</h3>
                                 <p class="text-secondary">Large-scale collaborative art pieces for public events and celebrations.</p>
-                                <a href="service-details.html" class="text-primary fw-bold text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                                <div class="mt-auto">
+                                    <a href="service-details.html" class="text-primary fw-bold text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -295,7 +302,7 @@
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                             </div>
-                            <p class="fst-italic mb-4">"The 3D art created for our product launch was a massive hit. It stopped everyone in their tracks and generated thousands of social shares!"</p>
+                            <p class="fst-italic mb-4 testimonial-quote">"The 3D art created for our product launch was a massive hit. It stopped everyone in their tracks and generated thousands of social shares!"</p>
                             <div class="d-flex flex-column align-items-center">
                                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="John Doe" class="rounded-circle mb-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover;">
                                 <div>
@@ -314,7 +321,7 @@
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                             </div>
-                            <p class="fst-italic mb-4">"ChalkMaster transformed our annual street festival. Their live performance was engaging and the final mural was breathtaking."</p>
+                            <p class="fst-italic mb-4 testimonial-quote">"ChalkMaster transformed our annual street festival. Their live performance was engaging and the final mural was breathtaking."</p>
                             <div class="d-flex flex-column align-items-center">
                                 <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Sarah Miller" class="rounded-circle mb-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover;">
                                 <div>
@@ -333,7 +340,7 @@
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                             </div>
-                            <p class="fst-italic mb-4">"Professional, punctual, and incredibly talented. They took our simple concept and turned it into a mind-bending illusion."</p>
+                            <p class="fst-italic mb-4 testimonial-quote">"Professional, punctual, and incredibly talented. They took our simple concept and turned it into a mind-bending illusion."</p>
                             <div class="d-flex flex-column align-items-center">
                                 <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150" alt="Robert Brown" class="rounded-circle mb-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover;">
                                 <div>
@@ -404,7 +411,7 @@
             </div>
             <hr class="my-5 opacity-25">
             <div class="text-center opacity-75">
-                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+                <p>&copy; 2026 <span class="text-brand fw-bold">ChalkMaster</span>. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -417,3 +424,6 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+

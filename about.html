@@ -18,14 +18,10 @@
                 <i class="bi bi-brush"></i> ChalkMaster
             </a>
             <div class="d-flex align-items-center order-lg-last gap-2">
-                <button id="rtlToggle" class="btn btn-outline-secondary p-0 d-flex align-items-center justify-content-center" title="Toggle RTL" style="width: 35px; height: 35px; border-radius: 50%; font-weight: 800; font-size: 0.65rem; line-height: 1;">
-                    RTL
-                </button>
-                <button id="themeToggle" class="btn btn-link text-secondary p-0 me-2 fs-4" title="Toggle Theme">
-                    <i class="bi bi-moon-fill"></i>
-                </button>
-                <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block">Login</a>
-                <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                <button id="rtlToggle" class="btn page-toggle rtl-toggle-btn d-none d-lg-inline-flex" title="Toggle RTL">RTL</button>
+                <button id="themeToggle" class="btn page-toggle theme-toggle-btn me-2 d-none d-lg-inline-flex" title="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                <a href="login.html" class="btn btn-outline-primary d-none d-lg-inline-block">Login</a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -63,9 +59,12 @@
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item mt-3">
                     <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
-                    <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
                 </li>
             </ul>
+            <div class="border-top pt-3 mt-2 d-flex justify-content-center gap-3">
+                <button class="btn page-toggle rtl-toggle-btn" title="Toggle RTL">RTL</button>
+                <button class="btn page-toggle theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+            </div>
         </div>
     </div>
 
@@ -90,13 +89,13 @@
                         <p class="text-secondary mb-4">Founded in 2015, ChalkMaster began as a small group of street artists who wanted to change how people interact with urban spaces. Today, we are a global agency representing the finest pavement illustrators.</p>
                         <p class="text-secondary mb-4">Our mission is simple: to transform the mundane grey of the city into a vibrant canvas for imagination and storytelling.</p>
                         <div class="row g-4">
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <div class="card stat-card p-4 text-center">
                                     <h3 class="text-primary mb-1">10+</h3>
                                     <p class="mb-0">Years of Experience</p>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <div class="card stat-card p-4 text-center">
                                     <h3 class="text-primary mb-1">25+</h3>
                                     <p class="mb-0">Global Artists</p>
@@ -116,29 +115,28 @@
                     <p class="text-secondary">The principles that guide every stroke of our chalk.</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-12">
                         <div class="value-card">
                             <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=400" alt="Creativity" class="value-img mb-4">
                             <h4>Creativity</h4>
                             <p class="text-secondary mb-0">Pushing the boundaries of what's possible on a pavement.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-12">
                         <div class="value-card">
                             <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=400" alt="Sustainability" class="value-img mb-4">
                             <h4>Sustainability</h4>
                             <p class="text-secondary mb-0">Using eco-friendly, non-toxic materials for all our work.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-12">
                         <div class="value-card">
-                            <i class="bi bi-people d-none"></i> <!-- Kept for fallback if needed, but hidden -->
                             <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=400" alt="Community" class="value-img mb-4">
                             <h4>Community</h4>
                             <p class="text-secondary mb-0">Engaging with the public and bringing people together.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-12">
                         <div class="value-card">
                             <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?auto=format&fit=crop&q=80&w=400" alt="Excellence" class="value-img mb-4">
                             <h4>Excellence</h4>
@@ -284,7 +282,7 @@
             </div>
             <hr class="my-5 opacity-25">
             <div class="text-center opacity-75">
-                <p>&copy; 2026 ChalkMaster. All Rights Reserved.</p>
+                <p>&copy; 2026 <span class="text-brand fw-bold">ChalkMaster</span>. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -295,3 +293,6 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+

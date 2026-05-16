@@ -1,65 +1,65 @@
 // Main JS for Chalk Art & Pavement Illustration Services
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme Toggle Logic
-    const themeToggle = document.getElementById('themeToggle');
     const htmlElement = document.documentElement;
-    const icon = themeToggle.querySelector('i');
 
-    // Check for saved theme
+    // ─── Theme Toggle ─────────────────────────────────────────────────────────
     const savedTheme = localStorage.getItem('theme') || 'light';
     htmlElement.setAttribute('data-bs-theme', savedTheme);
-    updateThemeIcon(savedTheme);
+    updateAllThemeIcons(savedTheme);
 
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = htmlElement.getAttribute('data-bs-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        
-        htmlElement.setAttribute('data-bs-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
+    document.body.addEventListener('click', (e) => {
+        const themeBtn = e.target.closest('.theme-toggle-btn');
+        if (themeBtn) {
+            e.preventDefault();
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            htmlElement.setAttribute('data-bs-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateAllThemeIcons(newTheme);
+        }
     });
 
-    function updateThemeIcon(theme) {
-        if (theme === 'dark') {
-            icon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-        } else {
-            icon.classList.replace('bi-sun-fill', 'bi-moon-fill');
-        }
+    function updateAllThemeIcons(theme) {
+        document.querySelectorAll('.theme-toggle-btn i').forEach(icon => {
+            if (theme === 'dark') {
+                icon.classList.remove('bi-moon-fill');
+                icon.classList.add('bi-sun-fill');
+            } else {
+                icon.classList.remove('bi-sun-fill');
+                icon.classList.add('bi-moon-fill');
+            }
+        });
     }
 
-    // RTL Toggle Logic
-    const rtlToggle = document.getElementById('rtlToggle');
-    
-    // Check for saved direction
+    // ─── RTL Toggle ───────────────────────────────────────────────────────────
     const savedDir = localStorage.getItem('dir') || 'ltr';
     htmlElement.setAttribute('dir', savedDir);
 
-    rtlToggle.addEventListener('click', () => {
-        const currentDir = htmlElement.getAttribute('dir');
-        const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
-        
-        htmlElement.setAttribute('dir', newDir);
-        localStorage.setItem('dir', newDir);
-    });
-
-    // Back to Top Button
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            backToTop.classList.add('show');
-        } else {
-            backToTop.classList.remove('show');
+    document.body.addEventListener('click', (e) => {
+        const rtlBtn = e.target.closest('.rtl-toggle-btn');
+        if (rtlBtn) {
+            e.preventDefault();
+            const currentDir = htmlElement.getAttribute('dir');
+            const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
+            htmlElement.setAttribute('dir', newDir);
+            localStorage.setItem('dir', newDir);
         }
     });
 
-    // Password Toggle Logic
-    const passwordToggles = document.querySelectorAll('.password-toggle');
-    passwordToggles.forEach(toggle => {
+    // ─── Back to Top ──────────────────────────────────────────────────────────
+    const backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 300);
+        });
+    }
+
+    // ─── Password Toggle ──────────────────────────────────────────────────────
+    document.querySelectorAll('.password-toggle').forEach(toggle => {
         toggle.addEventListener('click', () => {
             const input = toggle.parentElement.querySelector('input');
             const icon = toggle.querySelector('i');
-            
             if (input.type === 'password') {
                 input.type = 'text';
                 icon.classList.replace('bi-eye', 'bi-eye-slash');
@@ -70,9 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Simple Form Validation
-    const forms = document.querySelectorAll('.needs-validation');
-    Array.from(forms).forEach(form => {
+    // ─── Form Validation ──────────────────────────────────────────────────────
+    document.querySelectorAll('.needs-validation').forEach(form => {
         form.addEventListener('submit', event => {
             if (!form.checkValidity()) {
                 event.preventDefault();

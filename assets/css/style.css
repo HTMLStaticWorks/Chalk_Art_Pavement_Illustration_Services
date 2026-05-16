@@ -13,6 +13,8 @@
     --tertiary-color: #f8f9fa;
     --text-dark: #212529;
     --text-light: #f8f9fa;
+    --brand-color: #8b5cf6;
+    --brand-gradient: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
     --transition: all 0.3s ease;
 }
 
@@ -21,6 +23,45 @@
     --secondary-color: #0f1112; /* Darker for footer background in dark mode */
     --text-dark: #f8f9fa;
     --text-light: #212529;
+}
+
+[data-bs-theme="dark"] .text-dark {
+    color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .text-secondary {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #212529;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.bg-primary .text-secondary,
+.bg-secondary .text-secondary,
+.text-white .text-secondary,
+.bg-primary .text-muted,
+.bg-secondary .text-muted,
+.text-white .text-muted,
+.hero-section .text-secondary,
+.hero-section .text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-bs-theme="dark"] .input-group-text,
+[data-bs-theme="dark"] .form-control {
+    background-color: #2c3034;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+[data-bs-theme="dark"] .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 [data-bs-theme="dark"] .nav-link {
@@ -54,7 +95,9 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-.bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4, .bg-primary h5, .bg-primary h6 {
+.bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4, .bg-primary h5, .bg-primary h6,
+.bg-secondary h1, .bg-secondary h2, .bg-secondary h3, .bg-secondary h4, .bg-secondary h5, .bg-secondary h6,
+.text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6 {
     color: white !important;
 }
 
@@ -69,16 +112,33 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
     font-weight: 800;
     font-size: 1.5rem;
-    color: var(--primary-color) !important;
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.navbar-brand i {
+    -webkit-text-fill-color: initial;
+    color: var(--brand-color);
 }
 
 .nav-link {
     font-weight: 500;
     color: var(--secondary-color) !important;
     margin: 0 0.5rem;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .nav-link {
+        margin: 0 0.2rem;
+        font-size: 0.9rem;
+    }
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
 }
 
 .nav-link:hover, .nav-link.active {
@@ -126,8 +186,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-toggle {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50% !important;
     display: flex;
     align-items: center;
@@ -137,7 +197,8 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
     border: 1px solid rgba(0,0,0,0.1);
     color: var(--secondary-color);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-size: 0.7rem;
+    font-weight: 800;
 }
 
 .page-toggle:hover {
@@ -145,18 +206,20 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     border-color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(230, 81, 0, 0.3);
+}
+
+.page-toggle i {
+    font-size: 1.1rem;
 }
 
 [data-bs-theme="dark"] .page-toggle {
-    background: #1a1d20;
+    background: #2c3034;
     border-color: rgba(255,255,255,0.1);
-    color: #f8f9fa;
+    color: white;
 }
 
 [data-bs-theme="dark"] .page-toggle:hover {
     background: var(--primary-color);
-    color: white;
 }
 
 /* Hero Section */
@@ -242,6 +305,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: var(--transition);
     overflow: hidden;
     background: var(--tertiary-color);
+    color: var(--text-dark);
 }
 
 .card:hover {
@@ -277,11 +341,14 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.1);
 }
 
+
+
 /* Stat Cards */
 .stat-card {
     border: 1px solid rgba(230, 81, 0, 0.1) !important;
     background: white !important;
     transition: var(--transition);
+    color: var(--text-dark);
 }
 
 [data-bs-theme="dark"] .stat-card {
@@ -295,7 +362,8 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 25px rgba(230, 81, 0, 0.15);
 }
 
-[data-bs-theme="dark"] .bg-light {
+[data-bs-theme="dark"] .bg-light,
+[data-bs-theme="dark"] .bg-white {
     background-color: #121416 !important;
 }
 
@@ -324,7 +392,26 @@ footer a:hover {
 .footer-logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--primary-color) !important;
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.footer-logo i {
+    -webkit-text-fill-color: initial;
+    color: var(--brand-color);
+}
+
+.brand-text {
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.text-brand {
+    color: var(--brand-color) !important;
 }
 
 /* Back to Top */
@@ -428,6 +515,11 @@ footer a:hover {
 [dir="rtl"] .footer-logo i {
     margin-left: 0.5rem;
     margin-right: 0;
+}
+
+.service-img {
+    height: 250px;
+    object-fit: cover;
 }
 
 /* Gallery Section */
@@ -577,6 +669,20 @@ footer a:hover {
     border-radius: 20px;
     transition: var(--transition);
     border: 1px solid rgba(0,0,0,0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-dark);
+}
+
+@media (max-width: 992px) {
+    .value-card {
+        padding: 2rem 1rem;
+    }
+    .card-body {
+        padding: 1.5rem !important;
+    }
 }
 
 [data-bs-theme="dark"] .value-card {
@@ -624,6 +730,8 @@ footer a:hover {
     transition: var(--transition);
     overflow: hidden;
     border: 1px solid rgba(0,0,0,0.05);
+    height: 100%;
+    color: var(--text-dark);
 }
 
 [data-bs-theme="dark"] .team-card {
@@ -711,6 +819,10 @@ footer a:hover {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: var(--text-dark);
 }
 
 [data-bs-theme="dark"] .package-card {
@@ -722,6 +834,12 @@ footer a:hover {
     border: 2px solid var(--primary-color);
     transform: scale(1.05);
     z-index: 1;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .package-card.featured {
+        transform: scale(1);
+    }
 }
 
 .package-card.featured::before {
@@ -840,6 +958,7 @@ footer a:hover {
     border-radius: 15px;
     border: 1px solid rgba(0,0,0,0.05);
     transition: var(--transition);
+    color: var(--text-dark);
 }
 
 [data-bs-theme="dark"] .addon-card {
@@ -858,39 +977,7 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
-/* Featured Blog Post */
-.blog-featured-card {
-    background: white;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    transition: var(--transition);
-}
 
-[data-bs-theme="dark"] .blog-featured-card {
-    background: #1a1d20;
-}
-
-@media (min-width: 992px) {
-    .blog-featured-card {
-        flex-direction: row;
-    }
-    .blog-featured-img {
-        width: 50%;
-    }
-    .blog-featured-content {
-        width: 50%;
-        padding: 4rem !important;
-    }
-}
-
-.blog-featured-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* Visual Journal Grid */
 .journal-grid {
@@ -948,6 +1035,7 @@ footer a:hover {
     border-radius: 20px;
     padding: 2.5rem;
     border: 1px dashed rgba(230, 81, 0, 0.3);
+    color: var(--text-dark);
 }
 
 .checklist-item {
@@ -1069,3 +1157,159 @@ footer h5 {
 [data-bs-theme="dark"] .newsletter-form .input-group {
     background: rgba(0, 0, 0, 0.2);
 }
+
+/* Blog Featured Card */
+.blog-featured-card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .blog-featured-card {
+    background-color: #212529;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.blog-featured-img {
+    width: 100%;
+    height: 300px;
+}
+
+.blog-featured-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-featured-content {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .blog-featured-card {
+        flex-direction: row;
+        min-height: 450px;
+    }
+    .blog-featured-img {
+        width: 50%;
+        height: auto;
+    }
+    .blog-featured-content {
+        width: 50%;
+        padding: 4rem !important;
+    }
+}
+
+/* Blog Cards */
+.blog-card-img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Uniform blog card body alignment */
+.blog-card-body h4 {
+    font-size: 1.15rem;
+    line-height: 1.45;
+    margin-bottom: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 3.4rem;
+}
+
+.blog-card-body p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 4.4rem;
+    font-size: 0.92rem;
+}
+
+/* ==========================================
+   Testimonial Cards — Uniform Size & Alignment
+   ========================================== */
+
+/* Card inner layout: stars → quote (fixed height) → author at bottom */
+.card.text-center.bg-light {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Stars row — fixed, always at top */
+.card.text-center.bg-light .mb-3.text-primary {
+    flex-shrink: 0;
+}
+
+/* Quote area — FIXED height so all cards are identical regardless of text length */
+.testimonial-quote {
+    height: 9rem;           /* Fixed: ~5-6 lines at 0.95rem / 1.6 line-height */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-shrink: 0;
+    margin-bottom: 1.5rem !important;
+}
+
+/* Author block — pushed to the bottom, never floats mid-card */
+.card.text-center.bg-light .d-flex.flex-column.align-items-center {
+    margin-top: auto;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+/* Author text div (name + role) — fixed height = name line + 2 role lines */
+.card.text-center.bg-light .d-flex.flex-column.align-items-center > div {
+    height: 3.6rem;     /* name (~1.1rem) + 2-line role (~2.5rem) */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Author name — sits at top of text div, always at same line */
+.card.text-center.bg-light .d-flex.flex-column.align-items-center h6 {
+    margin-bottom: 0.15rem;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+/* Author role — fixed height locks 1-line and 2-line roles to same space */
+.card.text-center.bg-light .d-flex.flex-column.align-items-center small {
+    font-size: 0.8rem;
+    line-height: 1.35;
+    height: 2.2rem;     /* exactly 2 lines at 0.8rem / 1.35 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: center;
+}
+
+/* Mobile (< 768px): relax fixed height so full quotes are readable */
+@media (max-width: 767.98px) {
+    .testimonial-quote {
+        height: auto;
+        -webkit-line-clamp: unset;
+        display: block;
+    }
+}
+
