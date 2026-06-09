@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-brush"></i> ChalkMaster
+                <svg class="chalk-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15L15 6L18 9L9 18Z" /><path d="M10 11L13 14" /><path d="M6 15L5 19L9 18Z" /><path d="M2 21c3-1 5 1 8-1s6-3 11-1" stroke-dasharray="1 2" /></svg> ChalkMaster
             </a>
             <div class="d-flex align-items-center order-lg-last gap-2">
                 <button id="rtlToggle" class="btn page-toggle rtl-toggle-btn d-none d-lg-inline-flex" title="Toggle RTL">RTL</button>
@@ -44,7 +44,7 @@
     <div class="offcanvas offcanvas-start" id="mobileMenu">
         <div class="offcanvas-header border-bottom">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-brush"></i> ChalkMaster
+                <svg class="chalk-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15L15 6L18 9L9 18Z" /><path d="M10 11L13 14" /><path d="M6 15L5 19L9 18Z" /><path d="M2 21c3-1 5 1 8-1s6-3 11-1" stroke-dasharray="1 2" /></svg> ChalkMaster
             </a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
@@ -81,7 +81,7 @@
             <div class="container">
                 <div class="blog-featured-card">
                     <div class="blog-featured-img">
-                        <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=1200" alt="Featured Post">
+                        <img src="assets/img/3d_chalk_illusion.png" alt="Featured Post">
                     </div>
                     <div class="blog-featured-content p-4 d-flex flex-column justify-content-center">
                         <span class="badge bg-primary mb-3 align-self-start px-3 py-2">Editor's Pick</span>
@@ -107,15 +107,15 @@
                     <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-secondary"></i></span>
-                            <input type="text" class="form-control border-start-0 ps-0" placeholder="Search articles...">
+                            <input id="blogSearchInput" type="text" class="form-control border-start-0 ps-0" placeholder="Search articles...">
                         </div>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-outline-primary active">All</button>
-                            <button type="button" class="btn btn-outline-primary">Tutorials</button>
-                            <button type="button" class="btn btn-outline-primary">Festivals</button>
-                            <button type="button" class="btn btn-outline-primary">Interviews</button>
+                        <div class="btn-group btn-group-responsive">
+                            <button id="filterBtnAll" type="button" class="btn btn-outline-primary active">All</button>
+                            <button id="filterBtnTutorials" type="button" class="btn btn-outline-primary">Tutorials</button>
+                            <button id="filterBtnFestivals" type="button" class="btn btn-outline-primary">Festivals</button>
+                            <button id="filterBtnInterviews" type="button" class="btn btn-outline-primary">Interviews</button>
                         </div>
                     </div>
                 </div>
@@ -123,8 +123,8 @@
                 <!-- Blog Posts -->
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="card h-100 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?auto=format&fit=crop&q=80&w=600" class="card-img-top blog-card-img" alt="Tutorials">
+                        <div class="glass-card h-100 overflow-hidden hover-lift">
+                            <img src="assets/img/artist_creating_artwork.png" class="card-img-top blog-card-img" alt="Tutorials">
                             <div class="card-body blog-card-body p-4 d-flex flex-column">
                                 <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Tutorials</span>
                                 <h4><a href="blog-details.html" class="text-decoration-none text-dark">How to Prepare the Perfect Chalk Base</a></h4>
@@ -137,8 +137,8 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=600" class="card-img-top blog-card-img" alt="Festivals">
+                        <div class="glass-card h-100 overflow-hidden hover-lift">
+                            <img src="assets/img/festival_chalk_art.png" class="card-img-top blog-card-img" alt="Festivals">
                             <div class="card-body blog-card-body p-4 d-flex flex-column">
                                 <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Festivals</span>
                                 <h4><a href="blog-details.html" class="text-decoration-none text-dark">Top 10 Global Chalk Art Festivals to Visit</a></h4>
@@ -151,8 +151,8 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=600" class="card-img-top blog-card-img" alt="3D Illusions">
+                        <div class="glass-card h-100 overflow-hidden hover-lift">
+                            <img src="assets/img/3d_chalk_illusion.png" class="card-img-top blog-card-img" alt="3D Illusions">
                             <div class="card-body blog-card-body p-4 d-flex flex-column">
                                 <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Interviews</span>
                                 <h4><a href="blog-details.html" class="text-decoration-none text-dark">The Mind Behind the 3D Illusions: An Interview</a></h4>
@@ -187,35 +187,35 @@
                 </div>
                 <div class="journal-grid">
                     <div class="journal-item">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400" alt="Work 1">
+                        <img src="assets/img/3d_chalk_illusion.png" alt="Work 1">
                         <div class="journal-overlay"><i class="bi bi-eye fs-2"></i></div>
                     </div>
                     <div class="journal-item">
-                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=400" alt="Work 2">
+                        <img src="assets/img/artist_creating_artwork.png" alt="Work 2">
                         <div class="journal-overlay"><i class="bi bi-eye fs-2"></i></div>
                     </div>
                     <div class="journal-item">
-                        <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=400" alt="Work 3">
+                        <img src="assets/img/corporate_branding_pavement.png" alt="Work 3">
                         <div class="journal-overlay"><i class="bi bi-eye fs-2"></i></div>
                     </div>
                     <div class="journal-item">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=400" alt="Work 4">
+                        <img src="assets/img/family_interactive_chalk.png" alt="Work 4">
                         <div class="journal-overlay"><i class="bi bi-eye fs-2"></i></div>
                     </div>
                     <div class="journal-item d-none d-md-block">
-                        <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=400" alt="Work 5">
+                        <img src="assets/img/festival_chalk_art.png" alt="Work 5">
                         <div class="journal-overlay"><i class="bi bi-eye fs-2"></i></div>
                     </div>
                     <div class="journal-item d-none d-md-block">
-                        <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&q=80&w=400" alt="Work 6">
+                        <img src="assets/img/3d_chalk_illusion.png" alt="Work 6">
                         <div class="journal-overlay"><i class="bi bi-eye fs-2"></i></div>
                     </div>
                     <div class="journal-item d-none d-md-block">
-                        <img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?auto=format&fit=crop&q=80&w=400" alt="Work 7">
+                        <img src="assets/img/artist_creating_artwork.png" alt="Work 7">
                         <div class="journal-overlay"><i class="bi bi-eye fs-2"></i></div>
                     </div>
                     <div class="journal-item d-none d-md-block">
-                        <img src="https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?auto=format&fit=crop&q=80&w=400" alt="Work 8">
+                        <img src="assets/img/corporate_branding_pavement.png" alt="Work 8">
                         <div class="journal-overlay"><i class="bi bi-eye fs-2"></i></div>
                     </div>
                 </div>
@@ -229,7 +229,7 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <a class="footer-logo mb-3 d-inline-block" href="index.html">
-                        <i class="bi bi-brush"></i> ChalkMaster
+                        <svg class="chalk-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15L15 6L18 9L9 18Z" /><path d="M10 11L13 14" /><path d="M6 15L5 19L9 18Z" /><path d="M2 21c3-1 5 1 8-1s6-3 11-1" stroke-dasharray="1 2" /></svg> ChalkMaster
                     </a>
                     <p class="opacity-75">Pioneering the world of pavement art since 2015. We bring color and illusion to every corner of the world.</p>
                     <div class="d-flex gap-3 mt-4">
