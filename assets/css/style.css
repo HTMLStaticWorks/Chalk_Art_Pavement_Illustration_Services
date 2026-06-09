@@ -1779,6 +1779,18 @@ footer h5 {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
+/* Hero Glass Card Text Contrast Override for Bright/Dark Themes */
+.hero-glass-card .text-secondary,
+.hero-glass-card .text-muted {
+    color: #495057 !important;
+}
+
+[data-bs-theme="dark"] .hero-glass-card .text-secondary,
+[data-bs-theme="dark"] .hero-glass-card .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+
 .brand-btn-gradient {
     background: var(--brand-gradient) !important;
     border: none !important;
